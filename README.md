@@ -34,5 +34,38 @@
           </Route>
 ````
 
+# синтаксис useParams
 
-#  синтаксис useParams
+# стили для ссылок
+
+````
+    <NavLink to={"/propfile/settings"} style ={(param)=>
+               {
+                   return {color:param.isActive?"lime":"black"}
+               }}>settings
+    </NavLink>
+````
+
+или через className={}
+
+````
+     <NavLink to={"/propfile/settings"} 
+         className={({isActive})=>isActive? "act":"default"}>
+             settings
+     </NavLink>
+````
+
+<Link> не поддерживает ни функцию style, ни className
+
+````
+      <a 
+          href={"https://github.com/LenaRybinskova/React_Router_6/tree/master"} 
+          target={"_blank"} 
+          rel={"noreferrer nofollow noopener"}
+              >
+               xxx
+      </a>
+````
+
+"noreferrer nofollow noopener" сайт куда переходим не сможет отследить откуда пришли, не копировались хедерсы и не
+получит доступ к сессии
