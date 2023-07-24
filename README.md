@@ -33,3 +33,6 @@
               <Route path={"music"} element={<div>music</di
           </Route>
 ````
+
+
+#  синтаксис useParams
