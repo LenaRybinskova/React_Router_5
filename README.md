@@ -55,7 +55,7 @@
      </NavLink>
 ````
 
-Link не поддерживает ни функцию style, ни className
+Linkk не поддерживает ни функцию style, ни className
 
 ````
       <a 
